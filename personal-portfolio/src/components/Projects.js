@@ -17,16 +17,19 @@ export const Projects = () => {
       title: "Tif Task Manager",
       description: "A web application built with Reactjs, tailwind css and firebase where users can manage their todos. It also comes with sign-in option ",
       imgUrl: projImg1,
+      tags: [{tool:'Firebase', color: 'red'}, {tool:'React', color: 'blue'}, {tool:'Tailwind Css', color: 'blue'}, {tool:'React-context', color: 'green'}]
     },
     {
       title: "Trendy Admin Dashboard",
-      description: "A Very powerful admin dashboard that displays everything about a commercial business, like recent transactions, sales overview and so on. This web application also comes with multiple graphs for better analytics.",
+      description: "A Very powerful admin dashboard that displays everything about a commercial business.",
       imgUrl: projImg2,
+      tags: [{tool:'react', color: 'blue'}, {tool:'syncfusion', color: 'red'}, {tool:'Tailwind Css', color: 'blue'}, {tool:'Javasript', color: 'green'}, {tool:'react-context', color: 'green'}],
     },
     {
       title: "Fitness Club",
-      description: "A web application built with Reactjs, tailwind Css and rapid api where users get easy access to various exercises grouped into several categories. It also has a very optimal search functionality that allows users to search through the entire library. ",
+      description: "A web application built with Reactjs, tailwind Css and rapid api where users get easy access to various exercises grouped into several categories.",
       imgUrl: projImg3,
+      tags: [{tool:'React', color: 'blue'}, {tool:'Rapid-api', color: 'red'}, {tool:'Material UI', color: 'green'}]
     },
 
   ];
@@ -35,18 +38,20 @@ export const Projects = () => {
       title: "Shop Everything",
       description: "An E-commerce web application built with Reactjs, tailwind css and commerceJs that enables users to shop online with full payment validation.",
       imgUrl: projImg4,
+      tags: [{tool:'React', color: 'blue'}, {tool:'commerceJs', color: 'red'}, {tool:'Tailwind Css', color: 'blue'}]
     },
     {
       title: "PWA Weather App",
       description: "A Weather web application made with react and tailwind css that returns the weather condition of a place on search. It also has all the features of a progressive web application.",
       imgUrl: projImg5,
+      tags: [{tool:'React', color: 'blue'}, {tool:'Rapid-Api', color: 'red'}, {tool:'Tailwind Css', color: 'green'}]
     },
     {
       title: "Foody",
-      description: "A web application built with Reactjs, firebase and redux where users can purchase food items online . ",
+      description: "A web application built with Reactjs, firebase and redux where users can purchase food items online.",
       imgUrl: projImg6,
+      tags: [{tool:'React', color: 'blue'}, {tool:'Firebase', color: 'red'}, {tool:'Redux', color: 'green'}, {tool:'Tailwind Css', color: 'blue'}]
     },
-
   ];
 
   return (

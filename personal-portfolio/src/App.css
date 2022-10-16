@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
@@ -29,11 +31,11 @@ html {
 
 body {
   font-weight: 400;
+  font-family: 'Poppins';
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -431,12 +433,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
   overflow: hidden;
-  height: 250px;
+  border-radius: 15px;
+  min-height: 450px;
   margin-bottom: 30px;
+  border: 1px solid rgb(53, 52, 52);
+  background-color: rgb(53, 52, 52);
 }
-.proj-imgbx::before {
+.proj-img {
+  height: 50%;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+/* .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
@@ -444,30 +454,80 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
-}
+} */
 .proj-imgbx:hover::before {
   height: 100%;
 }
 .proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
+  margin: 5px 10px 5px 10px;
+}
+.link-container{
+  /* position: absolute;
+  bottom: 10px;
+  left: 25px; */
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.project-link{
+  border-bottom: 3px solid rgb(250, 98, 98);
+  padding: 0px;
+}
+.project-link:hover{
+  background-color: rgb(228, 54, 54);
+  transition:0.4s ease-in-out;
+  transition-duration: 500ms;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
-.proj-txtx h4 {
+.tag-wrapper{
+  margin-bottom: 6px;
+
+}
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 30px;
+  /* display: flex;
+  gap: 20px;
+  flex-wrap: wrap; */
+}
+.red-tag{
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: 0.5px solid rgb(248, 124, 124);
+  color: white;
+}
+.red-tag:hover{
+  background-color: rgba(248, 124, 124, 0.384);
+}
+.blue-tag{
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: 0.5px solid rgb(91, 91, 241);
+  color: white;
+}
+.blue-tag:hover{
+  background-color: rgba(91, 91, 241, 0.308);
+}
+.green-tag{
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: 0.5px solid rgb(102, 238, 102);
+  color: white;
+}
+.green-tag:hover{
+  background-color: rgba(102, 238, 102, 0.377);
+}
+/* .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
-}
+} */
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
@@ -482,11 +542,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
-.proj-img{
-  height: 100%;
-  object-fit:cover;
-  margin-bottom:20px;
-}
+
 
 /************ Projects Css ************/
 .contact {

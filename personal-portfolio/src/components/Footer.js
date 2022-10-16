@@ -18,7 +18,7 @@ export const Footer = () => {
               <a href="mailto:emmanuelobiechina8@gmail.com"><img src={navIcon2} alt="Icon" /></a>
               <a href="https://www.github.com/chibuike-19" target='_blank' rel='noreferrer'><img src={navIcon3} alt="Icon" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Made with ❤ by Emmanuel Obiechina <br/> &copy; 2022. All rights reserved.</p>
           </Col>
         </Row>
       </Container>
