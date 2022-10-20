@@ -112,10 +112,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
-span.navbar-text {
+/* span.navbar-text {
     display: flex;
     align-items: center;
-}
+} */
 .social-icon {
     display: inline-block;
     margin-left: 14px;
@@ -129,10 +129,12 @@ span.navbar-text {
     margin-right: 6px;
     margin-top: 20px;
     align-items: center;
-  
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a:hover{
+  transform: scale(1.1);
 }
 .social-icon a::before {
     content: "";
@@ -341,8 +343,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-slider .item img {
   width: 50%;
+  height: 150px;
   margin: 0 auto 15px auto;
 }
+.skill-slider .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .skill-logo{
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  object-fit: cover;
+} */
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -372,14 +385,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 50%;
+  cursor: pointer;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 50%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -426,6 +440,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .nav-link#projects-tabs-tab-second {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
 }
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -462,12 +477,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 5px 10px 5px 10px;
 }
 .link-container{
-  /* position: absolute;
+  position: absolute;
   bottom: 10px;
-  left: 25px; */
+  left: 25px;
   display: flex;
+  cursor: pointer;
   gap: 15px;
   margin-top: 10px;
+}
+.link-container span a {
+  text-decoration: none;
+  color: white;
 }
 .project-link{
   border-bottom: 3px solid rgb(250, 98, 98);

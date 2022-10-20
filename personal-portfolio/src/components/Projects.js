@@ -17,19 +17,25 @@ export const Projects = () => {
       title: "Tif Task Manager",
       description: "A web application built with Reactjs, tailwind css and firebase where users can manage their todos. It also comes with sign-in option ",
       imgUrl: projImg1,
-      tags: [{tool:'Firebase', color: 'red'}, {tool:'React', color: 'blue'}, {tool:'Tailwind Css', color: 'blue'}, {tool:'React-context', color: 'green'}]
+      tags: [{tool:'Firebase', color: 'red'}, {tool:'React', color: 'blue'}, {tool:'Tailwind Css', color: 'blue'}, {tool:'React-context', color: 'green'}],
+      sourceCode: 'https://github.com/chibuike-19/functional-todo-app',
+      liveDemo: ''
     },
     {
       title: "Trendy Admin Dashboard",
       description: "A Very powerful admin dashboard that displays everything about a commercial business.",
       imgUrl: projImg2,
       tags: [{tool:'react', color: 'blue'}, {tool:'syncfusion', color: 'red'}, {tool:'Tailwind Css', color: 'blue'}, {tool:'Javasript', color: 'green'}, {tool:'react-context', color: 'green'}],
+      sourceCode: 'https://github.com/chibuike-19/admin-dashboard',
+      liveDemo: 'https://custom-admin-dashboard.netlify.app/'
     },
     {
       title: "Fitness Club",
       description: "A web application built with Reactjs, tailwind Css and rapid api where users get easy access to various exercises grouped into several categories.",
       imgUrl: projImg3,
-      tags: [{tool:'React', color: 'blue'}, {tool:'Rapid-api', color: 'red'}, {tool:'Material UI', color: 'green'}]
+      tags: [{tool:'React', color: 'blue'}, {tool:'Rapid-api', color: 'red'}, {tool:'Material UI', color: 'green'}],
+      sourceCode: 'https://github.com/chibuike-19/fitness-app',
+      liveDemo: 'https://modern-fitness-app.netlify.app/'
     },
 
   ];
@@ -38,19 +44,25 @@ export const Projects = () => {
       title: "Shop Everything",
       description: "An E-commerce web application built with Reactjs, tailwind css and commerceJs that enables users to shop online with full payment validation.",
       imgUrl: projImg4,
-      tags: [{tool:'React', color: 'blue'}, {tool:'commerceJs', color: 'red'}, {tool:'Tailwind Css', color: 'blue'}]
+      tags: [{tool:'React', color: 'blue'}, {tool:'commerceJs', color: 'red'}, {tool:'Tailwind Css', color: 'blue'}],
+      sourceCode: 'https://github.com/chibuike-19/Shop-everything',
+      liveDemo: 'https://shop-everything.netlify.app/'
     },
     {
       title: "PWA Weather App",
       description: "A Weather web application made with react and tailwind css that returns the weather condition of a place on search. It also has all the features of a progressive web application.",
       imgUrl: projImg5,
-      tags: [{tool:'React', color: 'blue'}, {tool:'Rapid-Api', color: 'red'}, {tool:'Tailwind Css', color: 'green'}]
+      tags: [{tool:'React', color: 'blue'}, {tool:'Rapid-Api', color: 'red'}, {tool:'Tailwind Css', color: 'green'}],
+      sourceCode: 'https://github.com/chibuike-19/PWA-React-Weather-App',
+      liveDemo: ''
     },
     {
       title: "Foody",
       description: "A web application built with Reactjs, firebase and redux where users can purchase food items online.",
       imgUrl: projImg6,
-      tags: [{tool:'React', color: 'blue'}, {tool:'Firebase', color: 'red'}, {tool:'Redux', color: 'green'}, {tool:'Tailwind Css', color: 'blue'}]
+      tags: [{tool:'React', color: 'blue'}, {tool:'Firebase', color: 'red'}, {tool:'Redux', color: 'green'}, {tool:'Tailwind Css', color: 'blue'}],
+      sourceCode: '',
+      liveDemo: ''
     },
   ];
 
@@ -67,13 +79,10 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Section 1</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="second">See More</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -104,7 +113,7 @@ export const Projects = () => {
                         }
                         </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="third">
+                    {/* <Tab.Pane eventKey="third">
                        <Row>{
                           projects.map((project, index) => {
                             return (
@@ -116,7 +125,7 @@ export const Projects = () => {
                           })
                         }
                         </Row>
-                    </Tab.Pane>
+                    </Tab.Pane> */}
                   </Tab.Content>
                 </Tab.Container>
               </div>}
