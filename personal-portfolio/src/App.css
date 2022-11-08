@@ -477,8 +477,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 5px 10px 5px 10px;
 }
 .link-container{
-  position: absolute;
-  bottom: 10px;
+  /* position: absolute;
+  bottom: 10px; */
   left: 25px;
   display: flex;
   cursor: pointer;
