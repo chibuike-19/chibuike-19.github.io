@@ -485,6 +485,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   gap: 15px;
   margin-top: 10px;
 }
+.text-summary{
+  height: 180px;
+}
 .link-container span a {
   text-decoration: none;
   color: white;
